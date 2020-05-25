@@ -5,7 +5,7 @@ var flag=0;
 function functionality1()
 {
 xhr= new XMLHttpRequest();
-xhr.open("GET","https://newsapi.org/v2/everything?domains=wsj.com&apiKey=c4d6878a172b4856b436d781a6a7638d");
+xhr.open("GET","https://newsapi.org/v2/everything?domains=wsj.com&apiKey=47cf1a0bed0b4e97be76454cf46fbb3b");
 xhr.send();
 var data;
 xhr.onreadystatechange = function() {
@@ -51,7 +51,7 @@ function functionality2()
            cuntry.slice(1); 
     console.log(cuntry);
     var xhr1= new XMLHttpRequest();
-    xhr1.open("GET","https://api.currentsapi.services/v1/available/regions?apiKey=CD8Gn7BE7wnpfFsd2byD9pL5bYBraIh1n70fNcfh2c3PKrth");
+    xhr1.open("GET","https://api.currentsapi.services/v1/available/regions?apiKey=47cf1a0bed0b4e97be76454cf46fbb3b");
     xhr1.send();
      
 var data;
@@ -65,7 +65,7 @@ xhr1.onreadystatechange = function() {
     document.getElementById("more-news").style.display = "block"; 
     var cntry_news;
     var xhr2= new XMLHttpRequest();
-    xhr2.open("GET","https://newsapi.org/v2/top-headlines?country="+country+"&apiKey=c4d6878a172b4856b436d781a6a7638d");
+    xhr2.open("GET","https://newsapi.org/v2/top-headlines?country="+country+"&apiKey=47cf1a0bed0b4e97be76454cf46fbb3b");
     xhr2.send();
     xhr2.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -105,7 +105,7 @@ function functionality3()
 {
     var d=new Date();
 xhr= new XMLHttpRequest();
-xhr.open("GET","https://newsapi.org/v2/everything?q=bitcoin&from="+d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+"&sortBy=publishedAt&apiKey=c4d6878a172b4856b436d781a6a7638d");
+xhr.open("GET","https://newsapi.org/v2/everything?q=bitcoin&from="+d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+"&sortBy=publishedAt&apiKey=47cf1a0bed0b4e97be76454cf46fbb3b");
 xhr.send();
 var data;
 xhr.onreadystatechange = function() {
@@ -158,7 +158,7 @@ var flag=0;
 function functionality4()
 {
 xhr= new XMLHttpRequest();
-xhr.open("GET","https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=c4d6878a172b4856b436d781a6a7638d");
+xhr.open("GET","https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=47cf1a0bed0b4e97be76454cf46fbb3b");
 xhr.send();
 var data;
 xhr.onreadystatechange = function() {
