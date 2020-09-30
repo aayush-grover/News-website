@@ -10,7 +10,9 @@
     width: 100%;
     background-size: 100%,100%;
 }
-
+.color{
+    background-color: rgb(148, 148, 148);
+}
 .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black opacity */
